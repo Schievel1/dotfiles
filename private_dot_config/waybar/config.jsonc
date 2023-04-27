@@ -1,0 +1,151 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 0,
+    "modules-left": [
+        "custom/gentoo",
+        "wlr/workspaces",
+        "hyprland/window"
+    ],
+    "modules-center": [],
+    "modules-right": [
+        "custom/kernel",
+        "cpu",
+        "temperature",
+        "memory",
+        "memory#swap",
+        "disk",
+        "pulseaudio",
+        "custom/weather",
+        "tray",
+        "clock"
+    ],
+
+    "hyprland/window": {
+        "format": "{}",
+		"max-length": 95
+    },
+    "wlr/workspaces": {
+        "disable-scroll": true,
+        "format": "{icon}",
+        "on-click": "activate",
+	"format-icons": {
+        "1": "",
+		"2": "",
+		"3": "",
+        "4": "",
+		"5": "",
+		"6": "",
+	},
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+        }
+    },
+   "custom/weather" : {
+        "tooltip" : true,
+        "format" : "{}",
+        "interval" : 30,
+        "exec" : "/usr/bin/python ~/.config/waybar/scripts/waybar-wttr.py",
+        "return-type" : "json",
+        "on-click" : "gnome-weather"
+    },
+    "tray": {
+        "icon-size": 13,
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{: %R   %d.%m.}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", ""],
+        "on-scroll-up": "brightnessctl set 1%+",
+        "on-scroll-down": "brightnessctl set 1%-",
+        "min-length": 6
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "tooltip": false,
+        "format-muted": " Muted",
+        "on-click": "pavucontrol",
+        "on-scroll-up": "amixer sset 'Master' 2%+",
+        "on-scroll-down": "amixer sset 'Master' 2%-",
+        "scroll-step": 5,
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        }
+    },
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": " Muted",
+        "on-click": "pavucontrol",
+        "scroll-step": 5
+    },
+    "cpu": {
+	       "interval": 10,
+           "critical-threshold": 90,
+	       "format": " {usage}% |",
+           "on-click": "alacritty -e btop"
+    },
+    "temperature": {
+	                "thermal-zone": 2,
+                    "critical-threshold": 50,
+	 "format-critical": "{temperatureC}°C ",
+	"format": "{temperatureC}°C ",
+        "tooltip" : true,
+           "on-click": "alacritty -e btop"
+},
+    "memory": {
+	          "interval": 30,
+              "format": " {used}/{total}GiB",
+    },
+    "memory#swap": {
+	          "interval": 30,
+              "format": " {swapUsed}/{swapAvail}GiB",
+    },
+    "disk": {
+	"interval": 30,
+	"format": " {free} free",
+    },
+    "custom/kernel": {
+	"format": " {}",
+	"interval": 30,
+	"exec": "uname -r"
+},
+    "custom/gentoo": {
+	"format": " ",
+}
+}
