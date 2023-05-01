@@ -76,8 +76,7 @@
 
 (package! harpoon)
 
-(package! sqlite)
-
+(package! emacsql)
 
 (package! switch-window)
 (package! el-easydraw

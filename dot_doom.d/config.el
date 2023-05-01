@@ -1106,6 +1106,7 @@ Format is \"# Larry The Cow <larry@gentoo.org> (2019-07-01)\"."
         :ng "f"   #'dirvish-file-info-menu
         :ng "y"   #'dirvish-yank-menu
         :ng "o"   #'dirvish-quicksort
+        :ng "u"   #'dirvish-narrow
         :ng "TAB" #'dirvish-subtree-toggle
         :ng "M-t" #'dirvish-layout-toggle
         :ng "M-b" #'dirvish-history-go-backward

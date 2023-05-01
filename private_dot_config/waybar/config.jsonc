@@ -94,8 +94,8 @@
         "tooltip": false,
         "format-muted": " Muted",
         "on-click": "pavucontrol",
-        "on-scroll-up": "amixer sset 'Master' 2%+",
-        "on-scroll-down": "amixer sset 'Master' 2%-",
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +4%",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -4%",
         "scroll-step": 5,
         "format-icons": {
             "headphone": "",
