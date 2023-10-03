@@ -1,0 +1,461 @@
+[
+  {
+    "name": "top",
+    "output": "DVI-I-1",
+    "layer": "overlay",
+    "position": "top",
+    "width": "auto",
+    "height": 30,
+    "homogeneous": true,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "padding-horizontal": 0,
+    "padding-vertical": 0,
+    "spacing": 2,
+    "items-padding": 0,
+    "css-name": "panel-top",
+    "icons": "light",
+    "menu-start": "off",
+    "modules-left": [
+      "button-launcher",
+      "hyprland-workspaces"
+    ],
+    "modules-center": [
+      "clock"
+    ],
+    "modules-right": [
+      "executor-gsopinfo",
+      "tray",
+      "button-help"
+    ],
+    "controls": "right",
+    "controls-settings": {
+      "alignment": "right",
+      "components": [
+        "brightness",
+        "battery",
+        "volume",
+        "processes"
+      ],
+      "commands": {
+        "battery": "",
+        "net": "",
+        "bluetooth": "blueman-manager"
+      },
+      "custom-items": [
+        {
+          "name": "Wallpapers",
+          "icon": "azote",
+          "cmd": "azote"
+        },
+        {
+          "name": "GTK settings",
+          "icon": "nwg-look",
+          "cmd": "nwg-look"
+        },
+        {
+          "name": "Displays",
+          "icon": "nwg-displays",
+          "cmd": "nwg-displays"
+        },
+        {
+          "name": "Panel settings",
+          "icon": "nwg-panel",
+          "cmd": "nwg-panel-config"
+        },
+        {
+          "name": "Shell settings",
+          "icon": "nwg-shell-config",
+          "cmd": "nwg-shell-config"
+        }
+      ],
+      "menu": {
+        "name": "Exit",
+        "icon": "system-shutdown-symbolic",
+        "items": [
+          {
+            "name": "Lock",
+            "cmd": "nwg-lock"
+          },
+          {
+            "name": "Exit Hyprland session",
+            "cmd": "hyprctl dispatch exit"
+          },
+          {
+            "name": "Restart",
+            "cmd": "loginctl reboot"
+          },
+          {
+            "name": "Shutdown",
+            "cmd": "loginctl poweroff"
+          }
+        ]
+      },
+      "show-values": false,
+      "interval": 1,
+      "icon-size": 18,
+      "hover-opens": false,
+      "leave-closes": false,
+      "click-closes": true,
+      "css-name": "controls-window",
+      "net-interface": "wlo1",
+      "system-shutdown-symbolic": "system-shutdown",
+      "output-switcher": true,
+      "window-width": 320,
+      "window-margin": 0,
+      "root-css-name": "controls-overview",
+      "backlight-device": ""
+    },
+    "playerctl": {
+      "interval": 1,
+      "buttons": true,
+      "buttons-position": "left",
+      "chars": 50,
+      "css-name": "button-grid",
+      "icon-size": 16,
+      "button-css-name": "button-custom",
+      "label-css-name": "panel-top"
+    },
+    "clock": {
+      "format": "%a, %d. %b  %H:%M:%S",
+      "interval": 1,
+      "on-right-click": "",
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "clock",
+      "root-css-name": "root-clock"
+    },
+    "sway-taskbar": {},
+    "sway-workspaces": {},
+    "scratchpad": {},
+    "dwl-tags": {
+      "tag-names": "1 2 3 4 5 6 7 8 9",
+      "title-limit": 55,
+      "angle": 0.0
+    },
+    "tray": {
+      "icon-size": 16,
+      "root-css-name": "tray",
+      "inner-css-name": "inner-tray",
+      "smooth-scrolling-threshold": 0
+    },
+    "swaync": {
+      "tooltip-text": "Notifications",
+      "on-left-click": "swaync-client -t",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "root-css-name": "root-executor",
+      "css-name": "executor",
+      "icon-placement": "left",
+      "icon-size": 16,
+      "interval": 1,
+      "always-show-icon": true
+    },
+    "exclusive-zone": true,
+    "openweather": {},
+    "brightness-slider": {},
+    "button-launcher": {
+      "command": "nwg-drawer",
+      "icon": "grid",
+      "label": "",
+      "label-position": "right",
+      "tooltip": "Application drawer [Alt]+F1",
+      "css-name": "",
+      "icon-size": 16
+    },
+    "button-help": {
+      "command": "nwg-shell-help",
+      "icon": "help-about",
+      "label": "",
+      "label-position": "right",
+      "tooltip": "Show/hide help [S]+F1",
+      "css-name": "",
+      "icon-size": 16
+    },
+    "sigrt": 64,
+    "use-sigrt": false,
+    "hyprland-taskbar": {},
+    "hyprland-workspaces": {
+      "num-ws": 10,
+      "show-icon": true,
+      "image-size": 16,
+      "show-name": true,
+      "name-length": 40,
+      "show-empty": true,
+      "mark-content": true,
+      "show-names": true,
+      "mark-floating": true,
+      "mark-xwayland": true,
+      "angle": 0.0
+    },
+    "menu-start-settings": {
+      "cmd-lock": "swaylock -f -c 000000",
+      "cmd-logout": "swaymsg exit",
+      "cmd-restart": "loginctl reboot",
+      "cmd-shutdown": "loginctl poweroff",
+      "autohide": true,
+      "file-manager": "pcmanfm",
+      "height": 0,
+      "icon-size-large": 32,
+      "icon-size-small": 16,
+      "icon-size-button": 16,
+      "margin-bottom": 0,
+      "margin-left": 0,
+      "margin-right": 0,
+      "margin-top": 0,
+      "padding": 2,
+      "terminal": "alacritty",
+      "width": 0
+    },
+    "executor-gsopinfo": {
+      "script": "gopsuinfo -c atm",
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "root-css-name": "",
+      "css-name": "",
+      "icon-placement": "left",
+      "icon-size": 16,
+      "interval": 1,
+      "angle": 0.0,
+      "sigrt": 34,
+      "use-sigrt": false
+    }
+  },
+  {
+    "name": "",
+    "output": "",
+    "layer": "bottom",
+    "position": "top",
+    "controls": "off",
+    "menu-start": "off",
+    "width": "auto",
+    "height": 0,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "padding-horizontal": 0,
+    "padding-vertical": 0,
+    "spacing": 0,
+    "icons": "",
+    "css-name": "",
+    "modules-left": [],
+    "modules-center": [],
+    "modules-right": [],
+    "controls-settings": {
+      "components": [
+        "brightness",
+        "volume",
+        "battery"
+      ],
+      "commands": {
+        "battery": ""
+      },
+      "show-values": false,
+      "interval": 1,
+      "icon-size": 16,
+      "hover-opens": false,
+      "leave-closes": true,
+      "click-closes": false,
+      "root-css-name": "controls-overview",
+      "css-name": "controls-window",
+      "battery-low-level": 20,
+      "battery-low-interval": 3,
+      "custom-items": [
+        {
+          "name": "Panel settings",
+          "icon": "nwg-panel",
+          "cmd": "nwg-panel-config"
+        }
+      ],
+      "menu": {
+        "name": "unnamed",
+        "icon": "",
+        "items": []
+      }
+    },
+    "menu-start-settings": {
+      "cmd-lock": "swaylock -f -c 000000",
+      "cmd-logout": "swaymsg exit",
+      "cmd-restart": "systemctl reboot",
+      "cmd-shutdown": "systemctl -i poweroff",
+      "autohide": true,
+      "file-manager": "thunar",
+      "height": 0,
+      "icon-size-large": 32,
+      "icon-size-small": 16,
+      "icon-size-button": 16,
+      "margin-bottom": 0,
+      "margin-left": 0,
+      "margin-right": 0,
+      "margin-top": 0,
+      "padding": 2,
+      "terminal": "foot",
+      "width": 0
+    },
+    "sway-taskbar": {
+      "workspace-menu": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "name-max-len": 20,
+      "image-size": 16,
+      "workspaces-spacing": 0,
+      "task-padding": 0,
+      "show-app-icon": true,
+      "show-app-name": true,
+      "show-layout": true,
+      "workspace-buttons": true,
+      "all-workspaces": true,
+      "mark-autotiling": true,
+      "mark-xwayland": true,
+      "all-outputs": false
+    },
+    "hyprland-taskbar": {
+      "name-max-len": 24,
+      "icon-size": 16,
+      "workspaces-spacing": 0,
+      "client-padding": 0,
+      "show-app-icon": true,
+      "show-app-name": true,
+      "show-layout": true,
+      "all-outputs": false,
+      "mark-xwayland": true,
+      "angle": 0.0
+    },
+    "sway-workspaces": {
+      "numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "show-icon": true,
+      "image-size": 16,
+      "show-name": true,
+      "name-length": 40,
+      "mark-autotiling": true,
+      "mark-content": true,
+      "hide-empty": false,
+      "show-layout": true
+    },
+    "hyprland-workspaces": {
+      "num-ws": 10,
+      "show-icon": true,
+      "image-size": 16,
+      "show-name": true,
+      "name-length": 40,
+      "show-empty": true,
+      "mark-content": true,
+      "show-names": true,
+      "mark-floating": true,
+      "mark-xwayland": true,
+      "angle": 0.0
+    },
+    "clock": {
+      "format": "%a, %d. %b  %H:%M:%S",
+      "tooltip-text": "",
+      "tooltip-date-format": false,
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "root-css-name": "root-clock",
+      "css-name": "clock",
+      "interval": 1,
+      "angle": 0.0
+    },
+    "playerctl": {
+      "buttons-position": "left",
+      "icon-size": 16,
+      "chars": 30,
+      "scroll": false,
+      "button-css-name": "",
+      "label-css-name": "",
+      "interval": 1
+    },
+    "scratchpad": {
+      "css-name": "",
+      "icon-size": 16
+    },
+    "dwl-tags": {
+      "tag-names": "1 2 3 4 5 6 7 8 9",
+      "title-limit": 55
+    },
+    "openweather": {
+      "appid": "",
+      "weatherbit-api-key": "",
+      "lat": null,
+      "long": null,
+      "lang": "en",
+      "units": "metric",
+      "interval": 1800,
+      "loc-name": "",
+      "weather-icons": "color",
+      "on-right-click": "",
+      "on-middle-click": "",
+      "on-scroll": "",
+      "icon-placement": "start",
+      "icon-size": 24,
+      "css-name": "weather",
+      "show-name": false,
+      "angle": 0.0,
+      "ow-popup-icons": "light",
+      "popup-icon-size": 24,
+      "popup-text-size": "medium",
+      "popup-css-name": "weather-forecast",
+      "popup-placement": "right",
+      "popup-margin-horizontal": 0,
+      "popup-margin-top": 0,
+      "popup-margin-bottom": 0,
+      "show-humidity": true,
+      "show-wind": true,
+      "show-pressure": true,
+      "show-cloudiness": true,
+      "show-visibility": true,
+      "show-pop": true,
+      "show-volume": true
+    },
+    "brightness-slider": {
+      "show-values": true,
+      "icon-size": 16,
+      "interval": 10,
+      "hover-opens": false,
+      "leave-closes": false,
+      "root-css-name": "brightness-module",
+      "css-name": "brightness-popup",
+      "angle": 0.0,
+      "icon-placement": "start",
+      "backlight-device": "",
+      "backlight-controller": "light",
+      "slider-orientation": "horizontal",
+      "slider-inverted": false,
+      "popup-icon-placement": "start",
+      "popup-horizontal-alignment": "left",
+      "popup-vertical-alignment": "top",
+      "popup-width": 256,
+      "popup-height": 64,
+      "popup-horizontal-margin": 0,
+      "popup-vertical-margin": 0,
+      "step-size": 1
+    }
+  }
+]

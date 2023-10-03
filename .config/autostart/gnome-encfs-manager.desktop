@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=gnome-encfs-manager
+Hidden=false
+Icon=gnome-encfs-manager
+Name=Gnome Encfs Manager
+Type=Application
+X-GNOME-Autostart-enabled=true

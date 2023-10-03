@@ -1,0 +1,165 @@
+{
+  "__copyright__": "2010, Kovid Goyal <kovid@kovidgoyal.net>",
+  "__docformat__": "restructuredtext en",
+  "__license__": "GPL v3",
+  "author_name_copywords": [
+    "Corporation",
+    "Company",
+    "Co.",
+    "Agency",
+    "Council",
+    "Committee",
+    "Inc.",
+    "Institute",
+    "Society",
+    "Club",
+    "Team"
+  ],
+  "content_server_will_display": [
+    "*"
+  ],
+  "content_server_wont_display": [],
+  "horizontal_scrolling_per_column": true,
+  "metadata_edit_custom_column_order": [],
+  "metadata_single_use_2_cols_for_custom_fields": true,
+  "per_language_title_sort_articles": {
+    "afr": [
+      "'n\\s+",
+      "Die\\s+"
+    ],
+    "deu": [
+      "Der\\s+",
+      "Die\\s+",
+      "Das\\s+",
+      "Den\\s+",
+      "Ein\\s+",
+      "Eine\\s+",
+      "Einen\\s+",
+      "Dem\\s+",
+      "Des\\s+",
+      "Einem\\s+",
+      "Eines\\s+"
+    ],
+    "ell": [
+      "O\\s+",
+      "I\\s+",
+      "To\\s+",
+      "Ta\\s+",
+      "Tus\\s+",
+      "Tis\\s+",
+      "'Enas\\s+",
+      "'Mia\\s+",
+      "'Ena\\s+",
+      "'Enan\\s+"
+    ],
+    "eng": [
+      "A\\s+",
+      "The\\s+",
+      "An\\s+"
+    ],
+    "epo": [
+      "La\\s+",
+      "L'",
+      "L´"
+    ],
+    "fra": [
+      "Le\\s+",
+      "La\\s+",
+      "L'",
+      "L´",
+      "L’",
+      "Les\\s+",
+      "Un\\s+",
+      "Une\\s+",
+      "Des\\s+",
+      "De\\s+La\\s+",
+      "De\\s+",
+      "D'",
+      "D´",
+      "L’"
+    ],
+    "hun": [
+      "A\\s+",
+      "Az\\s+",
+      "Egy\\s+"
+    ],
+    "ita": [
+      "Lo\\s+",
+      "Il\\s+",
+      "L'",
+      "L´",
+      "La\\s+",
+      "Gli\\s+",
+      "I\\s+",
+      "Le\\s+",
+      "Uno\\s+",
+      "Un\\s+",
+      "Una\\s+",
+      "Un'",
+      "Un´",
+      "Dei\\s+",
+      "Degli\\s+",
+      "Delle\\s+",
+      "Del\\s+",
+      "Della\\s+",
+      "Dello\\s+",
+      "Dell'",
+      "Dell´"
+    ],
+    "nld": [
+      "De\\s+",
+      "Het\\s+",
+      "Een\\s+",
+      "'n\\s+",
+      "'s\\s+",
+      "Ene\\s+",
+      "Ener\\s+",
+      "Enes\\s+",
+      "Den\\s+",
+      "Der\\s+",
+      "Des\\s+",
+      "'t\\s+"
+    ],
+    "por": [
+      "A\\s+",
+      "O\\s+",
+      "Os\\s+",
+      "As\\s+",
+      "Um\\s+",
+      "Uns\\s+",
+      "Uma\\s+",
+      "Umas\\s+"
+    ],
+    "ron": [
+      "Un\\s+",
+      "O\\s+",
+      "Nişte\\s+"
+    ],
+    "spa": [
+      "El\\s+",
+      "La\\s+",
+      "Lo\\s+",
+      "Los\\s+",
+      "Las\\s+",
+      "Un\\s+",
+      "Una\\s+",
+      "Unos\\s+",
+      "Unas\\s+"
+    ],
+    "swe": [
+      "En\\s+",
+      "Ett\\s+",
+      "Det\\s+",
+      "Den\\s+",
+      "De\\s+"
+    ],
+    "tur": [
+      "Bir\\s+"
+    ]
+  },
+  "public_smtp_relay_host_suffixes": [
+    "gmail.com",
+    "live.com",
+    "gmx.com"
+  ]
+}

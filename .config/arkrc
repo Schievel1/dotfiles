@@ -1,0 +1,17 @@
+[ExtractDialog]
+DirHistory[$e]=$HOME/qmk_firmware/,$HOME/,$HOME/qmk_firmware/mydactyl/
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME
+Recent URLs[$e]=file:$HOME/,file:$HOME/Downloads/,file:$HOME/qmk_firmware/
+detailViewIconSize=16
+
+[MainWindow]
+DVI-I-1 HDMI-0 Height 1920x1080=1020
+DVI-I-1 HDMI-0 Width 1920x1080=1884
+DVI-I-1 HDMI-0 XPosition 1920x1080=1938
+DVI-I-1 HDMI-0 YPosition 1920x1080=42
+State=AAAA/wAAAAD9AAAAAAAAB1wAAAO0AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+StatusBar=Disabled
+ToolBarsMovable=Disabled
+splitterSizes=1256,627

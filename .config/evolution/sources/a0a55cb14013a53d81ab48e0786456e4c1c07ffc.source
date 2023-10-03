@@ -1,0 +1,29 @@
+[Data Source]
+DisplayName=spam@leimstift.de
+Enabled=true
+Parent=1d6b11de1c07ba344d7636fb9d5f82f525e087bd
+
+[Mail Submission]
+SentFolder=folder://local/Sent
+TransportUid=d097b7aa797d155429a6fa91518909b7f4b97d3d
+RepliesToOriginFolder=false
+UseSentFolder=true
+
+[Mail Composition]
+Bcc=
+Cc=
+DraftsFolder=folder://local/Drafts
+ReplyStyle=default
+SignImip=true
+TemplatesFolder=
+StartBottom=inconsistent
+TopSignature=inconsistent
+Language=
+
+[Mail Identity]
+Address=spam@leimstift.de
+Aliases=
+Name=
+Organization=
+ReplyTo=
+SignatureUid=none

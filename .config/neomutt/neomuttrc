@@ -1,0 +1,97 @@
+source ~/.config/neomutt/colors
+source ~/.config/neomutt/settings
+source ~/.config/neomutt/mappings
+set editor = "vim"
+
+
+#
+# Starter neomuttrc file, with just a few suggestions and settings.
+#
+# This file purposely doesn't include hooks, keybinding, macros, colors, etc.
+# Read the manual, explore, and have fun!
+#
+
+###############
+# Identity
+#
+set real_name = "Pascal Jäger"
+set from = "pascal.jaeger@leimstift.de"
+
+set reverse_name
+
+###############
+#
+set imap_user = "pascal.jaeger@leimstift.de"
+
+# To avoid storing your password in the .neomuttrc:
+# echo -n "$(read -s;echo -n "$REPLY")" | gpg --encrypt -r 0x1234567890ABCDEF > ~/.neomutt/account.gpg
+# Previous command won't work in some shells. You can use the following:
+# echo -n 'mypassword' | gpg --encrypt -r 0x1234567890ABCDEF > ~/.neomutt/account.gpg
+# !!! But be warned your password will be saved to shell history.
+set imap_pass = "`gpg --batch -q --decrypt ~/.config/neomutt/account.gpg`"
+set smtp_pass = "`gpg --batch -q --decrypt ~/.config/neomutt/account.gpg`"
+set smtp_url = "smtps://sslout.df.eu:465"
+set folder = imaps://sslin.df.eu:993
+set spoolfile = "+INBOX"
+unset record# = "+.Sent"
+unset trash# = "+.Trash"
+set postponed = "+.Drafts"
+
+set mail_check = 6
+
+unset imap_passive
+set imap_keepalive = 300
+###############
+# Pager settings
+#
+ignore *
+unignore From Message-ID Date To Cc Bcc Subject
+
+set pager_stop
+unset markers
+
+# Prefer plain text to html.
+# However, for brain dead clients that bundle attachments inside a
+# multipart/alternative, prefer that alternative.
+alternative_order multipart/mixed multipart/related text/plain
+
+# Consult mime.types for determining types of these attachments
+mime_lookup application/octet-stream
+
+# This requires a ~/.mailcap entry with the copiousoutput flag, such as:
+# text/html; lynx -dump -width ${COLUMNS:-80} %s; nametemplate=%s.html; copiousoutput
+auto_view text/html
+
+###############
+# Index settings
+#
+set quit = ask-yes
+set sort = threads
+
+# Remember to `mkdir -p ~/.neomutt/hcache` first:
+set header_cache= "~/.neomutt/hcache"
+
+###############
+# Message composition settings
+#
+set edit_headers
+
+# set editor = "emacsclient -a emacs -t"
+# set editor = "vim"
+
+set mime_type_query_command = "xdg-mime query filetype"
+
+# msmtp is a solid SMTP client.
+# neomutt also has built-in SMTP, or you can use an MTA like exim4 or postfix.
+set sendmail = "/usr/bin/msmtp"
+
+# lbdb is a versatile contact query tool.
+# Invoke via ctrl-t in an address prompt
+set query_command = "/usr/bin/lbdbq"
+
+###############
+# GnuPG
+#
+set pgp_default_key = "050A6D0B9324ED6D0D471B9A75A218C73BC80D28"
+set crypt_opportunistic_encrypt
+set postpone_encrypt

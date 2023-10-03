@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<highscores version="4">
+  <highscore track-name    ="volcano_island"
+             number-karts  ="5"
+             difficulty    ="1"
+             hscore-type   ="HST_STANDARD"
+             number-of-laps="2"
+             reverse       ="false">
+             <entry time    ="209.513"
+                    name    ="Schievel"
+                    kartname="konqi"/>
+  </highscore>
+  <highscore track-name    ="ravenbridge_mansion"
+             number-karts  ="5"
+             difficulty    ="1"
+             hscore-type   ="HST_STANDARD"
+             number-of-laps="3"
+             reverse       ="false">
+             <entry time    ="210.873"
+                    name    ="Schievel"
+                    kartname="pidgin"/>
+  </highscore>
+  <highscore track-name    ="scotland"
+             number-karts  ="4"
+             difficulty    ="1"
+             hscore-type   ="HST_STANDARD"
+             number-of-laps="3"
+             reverse       ="false">
+             <entry time    ="177.356"
+                    name    ="Schievel"
+                    kartname="tux"/>
+  </highscore>
+  <highscore track-name    ="hacienda"
+             number-karts  ="5"
+             difficulty    ="1"
+             hscore-type   ="HST_STANDARD"
+             number-of-laps="3"
+             reverse       ="false">
+             <entry time    ="177.839"
+                    name    ="Schievel"
+                    kartname="beastie"/>
+  </highscore>
+  <highscore track-name    ="abyss"
+             number-karts  ="5"
+             difficulty    ="1"
+             hscore-type   ="HST_STANDARD"
+             number-of-laps="3"
+             reverse       ="false">
+             <entry time    ="180.445"
+                    name    ="Schievel"
+                    kartname="pidgin"/>
+  </highscore>
+</highscores>

@@ -1,0 +1,18 @@
+[Data Source]
+DisplayName=123
+Enabled=true
+Parent=local-stub
+
+[Calendar]
+BackendName=local
+Color=rgb(0,0,0)
+Selected=true
+Order=0
+
+[Offline]
+StaySynchronized=true
+
+[Refresh]
+Enabled=true
+IntervalMinutes=30
+EnabledOnMeteredNetwork=true

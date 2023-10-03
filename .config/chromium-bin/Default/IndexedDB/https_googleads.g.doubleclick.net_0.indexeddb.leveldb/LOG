@@ -1,0 +1,6 @@
+2023/01/10-22:12:07.081 bef Creating DB /home/pascal/.config/chromium-bin/Default/IndexedDB/https_googleads.g.doubleclick.net_0.indexeddb.leveldb since it was missing.
+2023/01/10-22:12:07.127 bef Reusing MANIFEST /home/pascal/.config/chromium-bin/Default/IndexedDB/https_googleads.g.doubleclick.net_0.indexeddb.leveldb/MANIFEST-000001
+2023/01/10-22:12:12.377 c7a Level-0 table #5: started
+2023/01/10-22:12:12.393 c7a Level-0 table #5: 385 bytes OK
+2023/01/10-22:12:12.424 c7a Delete type=0 #3
+2023/01/10-22:12:12.424 c7a Manual compaction at level-0 from (begin) .. (end); will stop at (end)

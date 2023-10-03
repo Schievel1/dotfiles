@@ -1,0 +1,11 @@
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Bilder/gentoo-wallpaper-4.png,file:$HOME/Bilder/BingWallpaper/20211018-FanalMadeira_DE-DE1271275590_UHD.jpg,file:$HOME/Bilder/Larry-font-head.svg,file:$HOME/Bilder/BingWallpaper/20211014-ProseccoHills_DE-DE9907813288_UHD.jpg,file:$HOME/Bilder/BingWallpaper/20211101-MarigoldsLosMuertos_DE-DE5949357512_UHD.jpg,file:$HOME/Bilder/BingWallpaper/20211106-MackArch_DE-DE4984432567_UHD.jpg,file:$HOME/Bilder/dbapofl-60275498-b00c-4d63-9a21-f8f1e1610d6a.png
+Recent URLs[$e]=file:$HOME/Bilder/BingWallpaper/,file:$HOME/Bilder/,file:$HOME/,file:$HOME/Pictures/,file:$HOME/Documents/
+detailViewIconSize=16
+
+[MainWindow]
+DVI-I-1 HDMI-0 XPosition 1920x1080=618
+DVI-I-1 HDMI-0 YPosition 1920x1080=251
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAA5YAAAJ2AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled

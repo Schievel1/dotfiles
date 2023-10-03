@@ -1,0 +1,49 @@
+[Data Source]
+DisplayName=pascal.jaeger@leimstift.de
+Enabled=true
+Parent=b2b11ddeb87ed4ebd1475f8145f78e37030b10f0
+
+[Mail Submission]
+SentFolder=folder://b2b11ddeb87ed4ebd1475f8145f78e37030b10f0/INBOX/Sent
+TransportUid=37ae4f86db0489f4291768be63616380daa06c22
+RepliesToOriginFolder=false
+UseSentFolder=true
+
+[Mail Composition]
+Bcc=
+Cc=
+DraftsFolder=folder://b2b11ddeb87ed4ebd1475f8145f78e37030b10f0/INBOX/Drafts
+ReplyStyle=default
+SignImip=true
+TemplatesFolder=folder://local/Templates
+StartBottom=inconsistent
+TopSignature=inconsistent
+Language=
+
+[Mail Identity]
+Address=pascal.jaeger@leimstift.de
+Aliases=
+Name=Pascal Jaeger
+Organization=
+ReplyTo=
+SignatureUid=none
+
+[Pretty Good Privacy (OpenPGP)]
+AlwaysTrust=false
+EncryptToSelf=true
+KeyId=050A6D0B9324ED6D0D471B9A75A218C73BC80D28
+SigningAlgorithm=sha512
+SignByDefault=true
+EncryptByDefault=false
+PreferInline=false
+
+[Message Disposition Notifications]
+ResponsePolicy=ask
+
+[Secure MIME (S/MIME)]
+EncryptionCertificate=
+EncryptByDefault=false
+EncryptToSelf=true
+SigningAlgorithm=
+SigningCertificate=
+SignByDefault=false

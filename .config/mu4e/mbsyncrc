@@ -1,0 +1,63 @@
+# mbsyncrc based on
+# http://www.ict4g.net/adolfo/notes/2014/12/27/EmacsIMAP.html
+
+# ACCOUNT INFORMATION
+IMAPAccount pascal-leimstift
+# Address to connect to
+Host sslin.df.eu
+User pascal.jaeger@leimstift.de
+# Create a plain text file that contains your password. Name it mbsyncpass-acc1.
+# Then, gpg encrypt it by running: gpg2 -c mbsyncpass-acc1
+# Then delete the plain text file, leaving only mbsyncpass-acc1.gpg.
+PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d ~/.config/mu4e/mbsyncpass-acc1.gpg"
+AuthMechs LOGIN
+SSLType IMAPS
+SSLVersions TLSv1.2
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+# THEN WE SPECIFY THE LOCAL AND REMOTE STORAGE
+# - THE REMOTE STORAGE IS WHERE WE GET THE MAIL FROM (E.G., THE
+#   SPECIFICATION OF AN IMAP ACCOUNT)
+# - THE LOCAL STORAGE IS WHERE WE STORE THE EMAIL ON OUR COMPUTER
+
+# REMOTE STORAGE (USE THE IMAP ACCOUNT SPECIFIED ABOVE)
+IMAPStore pascal-leimstift-remote
+Account pascal-leimstift
+
+# LOCAL STORAGE (CREATE DIRECTORIES with mkdir -p ~/Maildir/derek-distrotube)
+MaildirStore pascal-leimstift-local
+Path ~/Mail/pascal-leimstift/
+Inbox ~/Mail/pascal-leimstift/INBOX
+# REQUIRED ONLY IF YOU WANT TO DOWNLOAD ALL SUBFOLDERS; SYNCING SLOWS DOWN
+# SubFolders Verbatim
+
+# CONNECTIONS SPECIFY LINKS BETWEEN REMOTE AND LOCAL FOLDERS
+#
+# CONNECTIONS ARE SPECIFIED USING PATTERNS, WHICH MATCH REMOTE MAIL
+# FOLDERS. SOME COMMONLY USED PATTERS INCLUDE:
+#
+# 1 "*" TO MATCH EVERYTHING
+# 2 "!DIR" TO EXCLUDE "DIR"
+# 3 "DIR" TO MATCH DIR
+Channel pascal-leimstift
+Master :pascal-leimstift-remote:INBOX
+Slave :pascal-leimstift-local:INBOX
+
+Channel pascal-leimstift
+Master :pascal-leimstift-remote:INBOX.Sent
+Slave :pascal-leimstift-local:Sent
+
+Channel pascal-leimstift
+Master :pascal-leimstift-remote:INBOX.Trash
+Slave :pascal-leimstift-local:Trash
+
+Channel pascal-leimstift
+Master :pascal-leimstift-remote:
+Slave :pascal-leimstift-local:
+Patterns *
+Patterns !INBOX
+Patterns !Sent
+Patterns !Trash
+Create Both
+Expunge Both
+SyncState *

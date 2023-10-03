@@ -1,0 +1,102 @@
+[2022-06-02 14:17:50.363] [17289] (engine.cpp:230): Time: Thu Jun  2 14:17:50 2022 CEST logLevel:2
+[2022-06-02 14:17:50.363] [17289] (audio_device_impl.cc:83): Create
+[2022-06-02 14:17:50.363] [17289] (audio_device_impl.cc:91): CreateForTest
+[2022-06-02 14:17:50.363] [17289] (audio_device_buffer.cc:64): AudioDeviceBuffer::ctor
+[2022-06-02 14:17:50.363] [17289] (audio_device_impl.cc:129): AudioDeviceModuleImpl
+[2022-06-02 14:17:50.363] [17289] (audio_device_impl.cc:133): CheckPlatform
+[2022-06-02 14:17:50.364] [17289] (audio_device_impl.cc:144): current platform is Linux
+[2022-06-02 14:17:50.364] [17289] (audio_device_impl.cc:163): CreatePlatformSpecificObjects
+[2022-06-02 14:17:50.364] [17289] (audio_device_impl.cc:992): PlatformAudioLayer
+[2022-06-02 14:17:50.364] [17289] (audio_device_impl.cc:299): PulseAudio support is enabled.
+[2022-06-02 14:17:50.364] [17289] (audio_mixer_manager_pulse_linux.cc:57): AudioMixerManagerLinuxPulse created
+[2022-06-02 14:17:50.364] [17289] (audio_device_pulse_linux.cc:81): AudioDeviceLinuxPulse created
+[2022-06-02 14:17:50.364] [17289] (audio_device_impl.cc:304): Linux PulseAudio APIs will be utilized
+[2022-06-02 14:17:50.364] [17289] (audio_device_impl.cc:345): AttachAudioBuffer
+[2022-06-02 14:17:50.364] [17289] (audio_device_buffer.cc:180): SetRecordingSampleRate(0)
+[2022-06-02 14:17:50.364] [17289] (audio_device_buffer.cc:186): SetPlayoutSampleRate(0)
+[2022-06-02 14:17:50.364] [17289] (audio_device_buffer.cc:200): SetRecordingChannels(0)
+[2022-06-02 14:17:50.364] [17289] (audio_device_buffer.cc:206): SetPlayoutChannels(0)
+[2022-06-02 14:17:50.364] [17289] (audio_engine.cpp:48): Creating audio engine: standard
+[2022-06-02 14:17:50.364] [17289] (audio_device_impl.cc:365): Init
+[2022-06-02 14:17:50.368] [17289] (audio_coding.cpp:143): Using software Opus decoder
+[2022-06-02 14:17:50.368] [17289] (audio_coding.cpp:160): Using software Opus encoder
+[2022-06-02 14:17:50.368] [17289] (audio_processing_impl.cc:274): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2022-06-02 14:17:50.368] [17289] (audio_processing_impl.cc:274): Injected APM submodules:
+Echo control factory: 1
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2022-06-02 14:17:50.368] [17289] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2022-06-02 14:17:50.368] [17289] (audio_device_impl.cc:896): RegisterAudioCallback
+[2022-06-02 14:17:50.368] [17289] (audio_device_buffer.cc:81): RegisterAudioCallback
+[2022-06-02 14:17:50.417] [17289] (audio_device_impl.cc:355): ActiveAudioLayer
+[2022-06-02 14:17:50.499] [17289] (audio_engine.cpp:145): Setting audio input device: 'default'
+[2022-06-02 14:17:50.499] [17289] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2022-06-02 14:17:50.499] [17289] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2022-06-02 14:17:50.499] [17289] (audio_device_impl.cc:777): SetRecordingDevice(0)
+[2022-06-02 14:17:50.499] [17289] (audio_device_impl.cc:567): StereoRecordingIsAvailable
+[2022-06-02 14:17:50.499] [17289] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2022-06-02 14:17:50.499] [17289] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2022-06-02 14:17:50.499] [17289] (audio_device_impl.cc:579): SetStereoRecording(0)
+[2022-06-02 14:17:50.499] [17289] (audio_device_buffer.cc:200): SetRecordingChannels(1)
+[2022-06-02 14:17:50.499] [17289] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2022-06-02 14:17:50.500] [17289] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2022-06-02 14:17:50.500] [17289] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2022-06-02 14:17:50.500] [17289] (audio_engine.cpp:156): Setting audio output device: 'default'
+[2022-06-02 14:17:50.500] [17289] (audio_device_impl.cc:709): SetPlayoutDevice(0)
+[2022-06-02 14:17:50.500] [17289] (audio_device_impl.cc:613): StereoPlayoutIsAvailable
+[2022-06-02 14:17:50.500] [17289] (audio_mixer_manager_pulse_linux.cc:189): SpeakerIsInitialized
+[2022-06-02 14:17:50.500] [17289] (audio_device_impl.cc:620): output: 1
+[2022-06-02 14:17:50.500] [17289] (audio_device_impl.cc:625): SetStereoPlayout(1)
+[2022-06-02 14:17:50.500] [17289] (audio_device_buffer.cc:206): SetPlayoutChannels(2)
+[2022-06-02 14:17:50.500] [17289] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2022-06-02 14:17:50.500] [17289] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2022-06-02 14:17:50.500] [17289] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2022-06-02 14:17:50.502] [17244] (discord.cpp:551): JS console: ["%c[default]","[BUILD INFO] Release Channel: canary, Build Number: 130562, Version Hash: 925b902e0ba79eb20e11d9dbbe168466deecd2e5"]
+[2022-06-02 14:17:50.555] [17244] (discord.cpp:551): JS console: ["%c[default]","[NATIVE INFO] host 0.0.135, modules: discord_desktop_core: 136, discord_erlpack: 136, discord_spellcheck: 136, discord_utils: 136, discord_voice: 136, discord_game_utils: 136, discord_rpc: 136"]
+[2022-06-02 14:17:50.654] [17244] (discord.cpp:551): JS console: ["%c[Spellchecker]","sh is not a valid locale."]
+[2022-06-02 14:17:50.696] [17289] (audio_engine.cpp:145): Setting audio input device: 'default'
+[2022-06-02 14:17:50.696] [17289] (audio_device_impl.cc:827): RecordingIsInitialized
+[2022-06-02 14:17:50.696] [17289] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2022-06-02 14:17:50.696] [17289] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2022-06-02 14:17:50.696] [17289] (audio_device_impl.cc:777): SetRecordingDevice(0)
+[2022-06-02 14:17:50.696] [17289] (audio_device_impl.cc:567): StereoRecordingIsAvailable
+[2022-06-02 14:17:50.696] [17289] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2022-06-02 14:17:50.696] [17289] (audio_mixer_manager_pulse_linux.cc:429): input device index has not been set
+[2022-06-02 14:17:50.696] [17289] (audio_device_impl.cc:579): SetStereoRecording(0)
+[2022-06-02 14:17:50.696] [17289] (audio_device_buffer.cc:200): SetRecordingChannels(1)
+[2022-06-02 14:17:50.696] [17289] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2022-06-02 14:17:50.696] [17289] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2022-06-02 14:17:50.696] [17289] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2022-06-02 14:17:50.696] [17289] (audio_engine.cpp:156): Setting audio output device: 'default'
+[2022-06-02 14:17:50.696] [17289] (audio_device_impl.cc:821): PlayoutIsInitialized
+[2022-06-02 14:17:50.696] [17289] (audio_device_impl.cc:709): SetPlayoutDevice(0)
+[2022-06-02 14:17:50.697] [17289] (audio_device_impl.cc:613): StereoPlayoutIsAvailable
+[2022-06-02 14:17:50.697] [17289] (audio_mixer_manager_pulse_linux.cc:189): SpeakerIsInitialized
+[2022-06-02 14:17:50.697] [17289] (audio_device_impl.cc:620): output: 1
+[2022-06-02 14:17:50.697] [17289] (audio_device_impl.cc:625): SetStereoPlayout(1)
+[2022-06-02 14:17:50.697] [17289] (audio_device_buffer.cc:206): SetPlayoutChannels(2)
+[2022-06-02 14:17:50.729] [17244] (discord.cpp:551): JS console: ["%c[Spellchecker]","Switching to en-US","(available)"]
+[2022-06-02 14:17:50.876] [17244] (discord.cpp:551): JS console: ["Deprecation warning: value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged and will be removed in an upcoming major release. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.\nArguments: \n[0] _isAMomentObject: true, _isUTC: false, _useUTC: false, _l: undefined, _i: 5/13/2022 10:00 -0800, _f: undefined, _strict: undefined, _locale: [object Object]\nError\n    at Function.createFromInputFallback (https://canary.discord.com/assets/0c74c1aaf8c3f4dee2bb.js:5561:330)\n    at Vn (https://canary.discord.com/assets/0c74c1aaf8c3f4dee2bb.js:5587:696)\n    at Kn (https://canary.discord.com/assets/0c74c1aaf8c3f4dee2bb.js:5590:356)\n    at Wn (https://canary.discord.com/assets/0c74c1aaf8c3f4dee2bb.js:5590:199)\n    at jn (https://canary.discord.com/assets/0c74c1aaf8c3f4dee2bb.js:5589:886)\n    at zn (https://canary.discord.com/assets/0c74c1aaf8c3f4dee2bb.js:5590:697)\n    at Xn (https://canary.discord.com/assets/0c74c1aaf8c3f4dee2bb.js:5590:731)\n    at i (https://canary.discord.com/assets/0c74c1aaf8c3f4dee2bb.js:5557:961)\n    at Object.962314 (https://canary.discord.com/assets/399e1f194aadd8f44465.js:1656:11)\n    at l (https://canary.discord.com/assets/e9c8c083913afbfad7a5.js:1:154)\n    at Object.72840 (https://canary.discord.com/assets/399e1f194aadd8f44465.js:1515:772)\n    at l (https://canary.discord.com/assets/e9c8c083913afbfad7a5.js:1:154)\n    at Object.900993 (https://canary.discord.com/assets/399e1f194aadd8f44465.js:54:163)\n    at l (https://canary.discord.com/assets/e9c8c083913afbfad7a5.js:1:154)\n    at Object.101327 (https://canary.discord.com/assets/399e1f194aadd8f44465.js:162:57)\n    at l (https://canary.discord.com/assets/e9c8c083913afbfad7a5.js:1:154)\n    at Object.206566 (https://canary.discord.com/assets/399e1f194aadd8f44465.js:168:851)\n    at l (https://canary.discord.com/assets/e9c8c083913afbfad7a5.js:1:154)\n    at Object.998872 (https://canary.discord.com/assets/8c02babc0c55509f727a.js:220:237)\n    at Function.l (https://canary.discord.com/assets/e9c8c083913afbfad7a5.js:1:154)"]
+[2022-06-02 14:17:50.962] [17244] (discord.cpp:551): JS console: ["%c[CloudSyncUtils]","CloudSync is not supported on this platform"]
+[2022-06-02 14:17:51.026] [17244] (discord.cpp:551): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2022-06-02 14:17:51.535] [17244] (discord.cpp:551): JS console: ["%c[RPCServer:WSS]","Starting on 6463"]
+[2022-06-02 14:17:51.537] [17244] (discord.cpp:551): JS console: ["%c[RPCServer:IPC]","Starting on /run/user/1000/discord-ipc-0"]
+[2022-06-02 14:17:51.617] [17244] (discord.cpp:551): JS console: ["%c[LoginQRSocket]","[0ms] connecting to wss://remote-auth-gateway.discord.gg/?v=1"]
+[2022-06-02 14:17:51.779] [17244] (discord.cpp:551): JS console: ["%c[LoginQRSocket]","[165ms] got hello, auth timeout=120097ms"]
+[2022-06-02 14:17:51.806] [17244] (discord.cpp:551): JS console: ["%c[LoginQRSocket]","[192ms] connected, handshaking with fingerprint: IehHyUy_Q14dLaEL60vR5154OhcaVPz7IKEGV2twdbY"]
+[2022-06-02 14:17:51.930] [17244] (discord.cpp:551): JS console: ["%c[LoginQRSocket]","[316ms] computed nonce proof"]
+[2022-06-02 14:17:52.051] [17244] (discord.cpp:551): JS console: ["%c[LoginQRSocket]","[437ms] handshake complete awaiting remote auth."]
+[2022-06-02 14:17:53.369] [17290] (device_info_linux.cc:45): NumberOfDevices
+[2022-06-02 14:17:56.371] [17290] (device_info_linux.cc:45): NumberOfDevices
+[2022-06-02 14:17:59.373] [17290] (device_info_linux.cc:45): NumberOfDevices
+[2022-06-02 14:18:02.375] [17290] (device_info_linux.cc:45): NumberOfDevices
+[2022-06-02 14:18:04.025] [17244] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-06-02 14:18:04.025] [17244] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]
+[2022-06-02 14:18:04.027] [17244] (discord.cpp:551): JS console: ["Window state not initialized","window-1"]

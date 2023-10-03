@@ -1,0 +1,13 @@
+.DS_Store
+.idea
+*.log
+tmp/
+
+.config/emacs
+.config/oh-my-zsh
+.config/discord
+.config/hypr/theme-repo
+.mozilla
+.config/Nextcloud/logs
+.gnupg
+.ssh

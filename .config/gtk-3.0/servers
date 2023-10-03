@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="smb://dietpi/pascals/" added="2022-03-22T21:18:25.641395Z" modified="2022-09-04T13:02:14.327730Z" visited="2022-09-04T13:02:14.327727Z">
+    <title>pascals on dietpi</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2022-09-04T13:02:14.327729Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="smb://dietpi/" added="2022-04-02T19:38:19.413492Z" modified="2022-04-16T20:26:16.449028Z" visited="2022-04-16T20:26:16.449025Z">
+    <title>Windows shares on dietpi</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2022-04-16T20:26:16.449027Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="smb://192.168.0.10/" added="2022-04-02T19:54:10.635285Z" modified="2022-10-05T10:05:34.903095Z" visited="2022-10-05T10:05:34.903087Z">
+    <title>Windows shares on 192.168.0.10</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2022-10-05T10:05:34.903092Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="smb://pascal@dietpi/pascals/" added="2022-04-16T20:35:16.813223Z" modified="2022-10-05T11:04:01.400425Z" visited="2022-10-05T11:04:01.400422Z">
+    <title>pascals on dietpi</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2022-10-05T11:04:01.400424Z" count="8"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="smb://192.168.0.10/pascals/" added="2022-07-16T16:56:29.368686Z" modified="2022-07-16T16:56:29.368691Z" visited="2022-07-16T16:56:29.368688Z">
+    <title>pascals on 192.168.0.10</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2022-07-16T16:56:29.368689Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="smb://pascal@dietpi/share/" added="2022-09-04T13:05:43.963451Z" modified="2022-09-04T13:05:43.963455Z" visited="2022-09-04T13:05:43.963452Z">
+    <title>share on dietpi</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2022-09-04T13:05:43.963453Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
