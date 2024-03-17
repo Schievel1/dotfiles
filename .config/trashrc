@@ -1,6 +1,1 @@
-[NetworkShares]
-NextID=1
-smb://dietpi/pascals:/media/sharepascal=0
-
-[Status]
-Empty=false
+../.dotfiles/.config/trashrc

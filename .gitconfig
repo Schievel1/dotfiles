@@ -10,6 +10,8 @@
 	directory = /var/db/repos/guru
 	directory = /var/db/repos/gentoo
 	directory = /var/db/repos/gentoo
+	directory = /var/tmp/portage/x11-base/xorg-server-21.1.9/work/xorg-server-21.1.9
+	directory = /var/tmp/portage/gui-apps/wscreensaver-9999/work/wscreensaver-9999
 [alias]
 l = log --graph --full-history --all --color --pretty=tformat:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m"
 c = checkout

@@ -11,3 +11,5 @@ tmp/
 .config/Nextcloud/logs
 .gnupg
 .ssh
+
+.config/github-copilot/hosts.json

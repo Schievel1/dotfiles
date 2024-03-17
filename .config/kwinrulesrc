@@ -1,2 +1,1 @@
-[$Version]
-update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
+../.dotfiles/.config/kwinrulesrc

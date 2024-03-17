@@ -1,6 +1,0 @@
-2023/01/10-22:12:26.867 c7a Creating DB /home/pascal/.config/chromium-bin/Default/IndexedDB/https_wokwi.com_0.indexeddb.leveldb since it was missing.
-2023/01/10-22:12:26.916 c7a Reusing MANIFEST /home/pascal/.config/chromium-bin/Default/IndexedDB/https_wokwi.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/01/10-22:12:27.030 b8e Level-0 table #5: started
-2023/01/10-22:12:27.062 b8e Level-0 table #5: 1223 bytes OK
-2023/01/10-22:12:27.125 b8e Delete type=0 #3
-2023/01/10-22:12:27.125 b8e Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

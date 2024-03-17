@@ -1,6 +1,67 @@
 <monitors version="2">
   <configuration>
     <logicalmonitor>
+      <x>3840</x>
+      <y>0</y>
+      <scale>1</scale>
+      <transform>
+        <rotation>left</rotation>
+        <flipped>no</flipped>
+      </transform>
+      <monitor>
+        <monitorspec>
+          <connector>DVI-D-1</connector>
+          <vendor>SAM</vendor>
+          <product>SMS24A450</product>
+          <serial>H4MC900068</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1200</height>
+          <rate>59.950</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>1920</x>
+      <y>268</y>
+      <scale>1</scale>
+      <primary>yes</primary>
+      <monitor>
+        <monitorspec>
+          <connector>DVI-D-2</connector>
+          <vendor>ACR</vendor>
+          <product>ED273</product>
+          <serial>T9DEE0053900</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.000</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>0</x>
+      <y>268</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>HDMI-1</connector>
+          <vendor>BNQ</vendor>
+          <product>BenQ EW2775ZH</product>
+          <serial>76H02364SL0</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.000</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+  </configuration>
+  <configuration>
+    <logicalmonitor>
       <x>1920</x>
       <y>491</y>
       <scale>1</scale>
@@ -15,7 +76,7 @@
         <mode>
           <width>1920</width>
           <height>1080</height>
-          <rate>60</rate>
+          <rate>60.000</rate>
         </mode>
       </monitor>
     </logicalmonitor>
@@ -33,7 +94,7 @@
         <mode>
           <width>1920</width>
           <height>1080</height>
-          <rate>60</rate>
+          <rate>60.000</rate>
         </mode>
       </monitor>
     </logicalmonitor>
@@ -55,7 +116,7 @@
         <mode>
           <width>1920</width>
           <height>1200</height>
-          <rate>59.950172424316406</rate>
+          <rate>59.950</rate>
         </mode>
       </monitor>
     </logicalmonitor>
@@ -79,7 +140,7 @@
         <mode>
           <width>1920</width>
           <height>1080</height>
-          <rate>50</rate>
+          <rate>50.000</rate>
         </mode>
       </monitor>
     </logicalmonitor>
@@ -98,7 +159,7 @@
         <mode>
           <width>1920</width>
           <height>1080</height>
-          <rate>60</rate>
+          <rate>60.000</rate>
         </mode>
       </monitor>
     </logicalmonitor>
@@ -116,7 +177,68 @@
         <mode>
           <width>1920</width>
           <height>1080</height>
-          <rate>60</rate>
+          <rate>60.000</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+  </configuration>
+  <configuration>
+    <logicalmonitor>
+      <x>3840</x>
+      <y>0</y>
+      <scale>1</scale>
+      <transform>
+        <rotation>left</rotation>
+        <flipped>no</flipped>
+      </transform>
+      <monitor>
+        <monitorspec>
+          <connector>DVI-I-1</connector>
+          <vendor>SAM</vendor>
+          <product>SMS24A450</product>
+          <serial>H4MC900068</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1200</height>
+          <rate>59.950</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>1920</x>
+      <y>465</y>
+      <scale>1</scale>
+      <primary>yes</primary>
+      <monitor>
+        <monitorspec>
+          <connector>DVI-D-1</connector>
+          <vendor>ACR</vendor>
+          <product>ED273</product>
+          <serial>T9DEE0053900</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.000</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>0</x>
+      <y>465</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>HDMI-1</connector>
+          <vendor>BNQ</vendor>
+          <product>BenQ EW2775ZH</product>
+          <serial>76H02364SL0</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.000</rate>
         </mode>
       </monitor>
     </logicalmonitor>

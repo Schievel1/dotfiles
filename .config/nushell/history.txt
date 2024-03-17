@@ -1,0 +1,16 @@
+exit
+cd /home
+cd ~
+ls
+ls 
+ls | where type == dir
+exit
+ls
+l
+l -la
+ls -la
+neofetch 
+ls -la | where name starts-with .
+z
+fzf
+loginctl poweroff

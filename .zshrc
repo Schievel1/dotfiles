@@ -1,3 +1,5 @@
+[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit;}
+
 neofetch
 #bonsai -S -L 50 -M 10
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -166,18 +168,19 @@ setopt HIST_SAVE_NO_DUPS  # do not save duplicated command
 setopt HIST_REDUCE_BLANKS  # remove unnecessary blanks
 setopt INC_APPEND_HISTORY_TIME  # append command to history file immediately after execution
 setopt EXTENDED_HISTORY  # record command start time
+unsetopt EQUALS # switch off the `=` expansion
 
 # Use lf to switch directories and bind it to ctrl-o
-lfcd () {
-    tmp="$(mktemp)"
-    lf -last-dir-path="$tmp" "$@"
-    if [ -f "$tmp" ]; then
-        dir="$(cat "$tmp")"
-        rm -f "$tmp"
-        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
-    fi
-}
-bindkey -s '^o' 'lfcd\n'
+# lfcd () {
+    # tmp="$(mktemp)"
+    # lf -last-dir-path="$tmp" "$@"
+    # if [ -f "$tmp" ]; then
+        # dir="$(cat "$tmp")"
+        # rm -f "$tmp"
+        # [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+    # fi
+# }
+# bindkey -s '^o' 'lfcd\n'
 
 unalias ls
 alias ls=lsd
@@ -197,9 +200,33 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+#vterm stuff
+vterm_printf() {
+    if [ -n "$TMUX" ] && ([ "${TERM%%-*}" = "tmux" ] || [ "${TERM%%-*}" = "screen" ]); then
+        # Tell tmux to pass the escape sequences through
+        printf "\ePtmux;\e\e]%s\007\e\\" "$1"
+    elif [ "${TERM%%-*}" = "screen" ]; then
+        # GNU screen (screen, screen-256color, screen-256color-bce)
+        printf "\eP\e]%s\007\e\\" "$1"
+    else
+        printf "\e]%s\e\\" "$1"
+    fi
+}
+if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
+    alias clear='vterm_printf "51;Evterm-clear-scrollback";tput clear'
+fi
+autoload -U add-zsh-hook
+# add-zsh-hook -Uz chpwd (){ print -Pn "\e]2;%m:%2~\a" }
+vterm_prompt_end() {
+    vterm_printf "51;A$(whoami)@$(hostname):$(pwd)"
+}
+setopt PROMPT_SUBST
+PROMPT=$PROMPT'%{$(vterm_prompt_end)%}'
+
 
 zvm_after_init_commands+=("bindkey '^[[A' history-substring-search-up" "bindkey '^[[B' history-substring-search-down")
-
+zvm_after_init_commands+=("eval $(atuin init zsh)")
+zvm_after_init_commands+=("bindkey -s ^f 'tmux-sessionizer\n'")
 
 eval "$(command repo-cd --zsh=rcd)"
 eval "$(command workdir-cd --zsh=w)"
@@ -217,25 +244,8 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'lsd -lah'
 zstyle ':fzf-tab:*' switch-group ',' '.'
 zstyle ':fzf-tab:complete:*' fzf-bindings 'tab:accept'
 
-#vterm stuff
-vterm_printf() {
-    if [ -n "$TMUX" ] && ([ "${TERM%%-*}" = "tmux" ] || [ "${TERM%%-*}" = "screen" ]); then
-        # Tell tmux to pass the escape sequences through
-        printf "\ePtmux;\e\e]%s\007\e\\" "$1"
-    elif [ "${TERM%%-*}" = "screen" ]; then
-        # GNU screen (screen, screen-256color, screen-256color-bce)
-        printf "\eP\e]%s\007\e\\" "$1"
-    else
-        printf "\e]%s\e\\" "$1"
-    fi
-}
-if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
-    alias clear='vterm_printf "51;Evterm-clear-scrollback";tput clear'
+export PATH="$HOME/.config/emacs/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/bin:$HOME/dev/platform-tools:$JAVA_HOME/bin:$PATH"
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
 fi
-autoload -U add-zsh-hook
-add-zsh-hook -Uz chpwd (){ print -Pn "\e]2;%m:%2~\a" }
-vterm_prompt_end() {
-    vterm_printf "51;A$(whoami)@$(hostname):$(pwd)"
-}
-setopt PROMPT_SUBST
-PROMPT=$PROMPT'%{$(vterm_prompt_end)%}'
+export PATH="$HOME/dev/gcc-arm-10.2-2020.11-x86_64-aarch64-none-linux-gnu/bin:$PATH"

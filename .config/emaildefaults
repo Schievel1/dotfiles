@@ -1,5 +1,1 @@
-[Defaults]
-Profile=Default
-
-[PROFILE_Default]
-ServerType=
+../.dotfiles/.config/emaildefaults
