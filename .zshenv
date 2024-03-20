@@ -11,7 +11,7 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 export PATH="$HOME/dev/gcc-arm-10.2-2020.11-x86_64-aarch64-none-linux-gnu/bin:$PATH"
-
+export XDG_CONFIG_HOME=~/.config
 export HISTFILE=~/.histfile
 export HISTSIZE=1000000   # the number of items for the internal history list
 export SAVEHIST=1000000   # maximum number of items for the history file

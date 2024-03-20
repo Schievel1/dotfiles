@@ -1,7 +1,7 @@
 [
   {
     "name": "panel-top",
-    "output": "",
+    "output": "All",
     "layer": "bottom",
     "position": "top",
     "controls": "right",
@@ -166,6 +166,8 @@
       "padding": 2,
       "terminal": "foot",
       "width": 0
-    }
+    },
+    "start-hidden": false,
+    "sway-mode": {}
   }
 ]

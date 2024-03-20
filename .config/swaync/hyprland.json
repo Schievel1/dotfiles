@@ -74,5 +74,6 @@
       "image-size": 96,
       "image-radius": 12
     }
-  }
+  },
+  "relative-timestamps": true
 }
