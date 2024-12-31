@@ -25,8 +25,8 @@ ContactsUrl=
 
 [GNOME Online Accounts]
 AccountId=account_1631470704_0
-CalendarUrl=https://pascal@pascal.leimstift.de/remote.php/dav/
-ContactsUrl=https://pascal@pascal.leimstift.de/remote.php/dav/
+CalendarUrl=https://pascal@pascal.leimstift.de/remote.php/dav
+ContactsUrl=https://pascal@pascal.leimstift.de/remote.php/dav
 Name=
 Address=
 

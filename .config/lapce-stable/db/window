@@ -1,0 +1,21 @@
+{
+  "size": {
+    "width": 930.0,
+    "height": 1006.0
+  },
+  "pos": {
+    "x": 0.0,
+    "y": 0.0
+  },
+  "maximised": false,
+  "tabs": {
+    "active_tab": 0,
+    "workspaces": [
+      {
+        "kind": "Local",
+        "path": "/home/pascal/nextcloud/.doom.d",
+        "last_open": 0
+      }
+    ]
+  }
+}

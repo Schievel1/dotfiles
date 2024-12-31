@@ -24,8 +24,7 @@
       "clock"
     ],
     "modules-right": [
-      "tray",
-      "button-help"
+      "tray"
     ],
     "controls": "right",
     "controls-settings": {
@@ -240,7 +239,11 @@
       "use-sigrt": false
     },
     "start-hidden": false,
-    "sway-mode": {}
+    "sway-mode": {},
+    "monitor": "",
+    "width-as-percentage": false,
+    "keyboard-layout": {},
+    "random-wallpaper": {}
   },
   {
     "name": "",

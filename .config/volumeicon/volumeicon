@@ -1,5 +1,5 @@
 [Alsa]
-card=HDA Intel PCH
+card=HD-Audio Generic
 channel=Master
 
 [Notification]
@@ -9,9 +9,9 @@ notification_type=0
 [StatusIcon]
 stepsize=5
 onclick=pavucontrol
-theme=Default
+theme=tango
 use_panel_specific_icons=false
-lmb_slider=true
+lmb_slider=false
 mmb_mute=false
 use_horizontal_slider=false
 show_sound_level=false

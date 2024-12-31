@@ -18,6 +18,7 @@ StaySynchronized=false
 [Refresh]
 Enabled=true
 IntervalMinutes=60
+EnabledOnMeteredNetwork=true
 
 [Rss Backend]
 FilterInbox=true

@@ -6,6 +6,7 @@ ExportClipboard:	0
 AutoSaveFrequency:	5
 RevisionsToRetain:	0
 UndoRedoLimitToSave:	0
+SaveEditorState:	1
 WarnScriptUnsaved:	0
 UsePlugins:	1
 NewCharset:	ISO8859-1
@@ -26,7 +27,7 @@ AutoLBearingSync:	1
 ItalicConstrained:	1
 InterpolateCPsOnMotion:	0
 SnapDistance:	2
-SnapDistanceMeasureTool:	3,5
+SnapDistanceMeasureTool:	3.5
 SnapToInt:	1
 StopAtJoin:	0
 JoinSnap:	0
@@ -65,8 +66,8 @@ GenerateHintWidthEqualityTolerance:	0
 ClearInstrsBigChanges:	1
 CopyTTFInstrs:	0
 UseNewIndicScripts:	1
-StandardSlopeError:	2,9
-SerifSlopeError:	18,2
+StandardSlopeError:	2.9
+SerifSlopeError:	18.2
 HintBoundingBoxes:	1
 HintDiagonalEnds:	0
 HintDiagonalInter:	0
@@ -127,7 +128,7 @@ RectCenterOut:	0
 EllipseCenterOut:	1
 PolyStartPointCnt:	6
 RoundRectRadius:	0
-StarPercent:	1,73205
+StarPercent:	1.73205
 CoverageFormatsAllowed:	3
 DebugWins:	3
 GridFitDpi:	72
@@ -155,13 +156,13 @@ CV_CB2Tool:	5
 XUID-Base:	1021 891 -1608073197
 ShowKerningPane:	1
 PluginStartupMode:	Ask
+Recent:	/home/pascal/.local/share/fonts/JetBrainsMonoNLNerdFont-Regular.ttf
+Recent:	/home/pascal/.local/share/fonts/JetBrains Mono Regular Nerd Font Complete.ttf
 Recent:	/usr/share/fonts/Font Awesome 6 Free-Regular-400.otf
 Recent:	/usr/share/fonts/Hack-Regular.ttf
-Recent:	/home/pascal/.local/share/fonts/JetBrains Mono Regular Nerd Font Complete.ttf
 Recent:	/home/pascal/Downloads/HackLigatured-v3.003+FC3.1+JBMv2.242/HackNFFCLigaturedCCG-Regular.ttf
 Recent:	/home/pascal/Downloads/HackLigatured-v3.003+FC3.1+JBMv2.242/HackNerdFontJBMLigaturedCCG-Regular.ttf
 Recent:	/home/pascal/Downloads/Hack-v3.003-ttf/ttf/Hack-Bold.ttf
 Recent:	/home/pascal/Downloads/Hack-v3.003-ttf/ttf/Hack-BoldItalic.ttf
 Recent:	/home/pascal/Downloads/Hack-v3.003-ttf/ttf/Hack-Italic.ttf
 Recent:	/home/pascal/Downloads/Hack-v3.003-ttf/ttf/Hack-Regular.ttf
-Recent:	/home/pascal/.local/share/fonts/JetBrainsMono-Regular.ttf

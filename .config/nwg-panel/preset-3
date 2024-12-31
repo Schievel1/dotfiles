@@ -2,7 +2,7 @@
   {
     "name": "top",
     "output": "",
-    "layer": "top",
+    "layer": "overlay",
     "position": "top",
     "height": 30,
     "width": "auto",
@@ -16,15 +16,17 @@
     "css-name": "panel-top",
     "icons": "",
     "modules-left": [
-      "sway-workspaces"
+      "sway-workspaces",
+      "scratchpad"
     ],
     "modules-center": [
       "clock"
     ],
     "modules-right": [
-      "scratchpad",
+      "sway-mode",
       "tray",
-      "button-help"
+      "button-help",
+      "button-clipman"
     ],
     "controls-settings": {
       "alignment": "right",
@@ -32,7 +34,8 @@
         "brightness",
         "battery",
         "volume",
-        "processes"
+        "processes",
+        "readme"
       ],
       "commands": {
         "battery": "",
@@ -76,15 +79,15 @@
           },
           {
             "name": "Exit sway session",
-            "cmd": "swaymsg exit"
+            "cmd": "nwg-dialog -p exit-sway -c \"swaymsg exit\""
           },
           {
             "name": "Restart",
-            "cmd": "systemctl reboot"
+            "cmd": "nwg-dialog -p reboot -c \"systemctl reboot\""
           },
           {
             "name": "Shutdown",
-            "cmd": "systemctl -i poweroff"
+            "cmd": "nwg-dialog -p poweroff -c \"systemctl -i poweroff\""
           }
         ]
       },
@@ -100,8 +103,10 @@
       "output-switcher": true,
       "window-width": 320,
       "window-margin": 0,
+      "battery-low-level": 0,
       "root-css-name": "controls-overview",
-      "backlight-device": ""
+      "backlight-device": "",
+      "backlight-controller": "brightnessctl"
     },
     "clock": {
       "format": "%a, %d. %b  %H:%M:%S",
@@ -171,8 +176,29 @@
       "label": "",
       "label-position": "right",
       "tooltip": "Show/hide help [S]+F1",
-      "css-name": "",
+      "css-name": "button-custom",
       "icon-size": 16
-    }
+    },
+    "button-clipman": {
+      "command": "nwg-clipman",
+      "icon": "nwg-clipman",
+      "label": "",
+      "label-position": "right",
+      "tooltip": "Clipboard history [Alt]+c",
+      "css-name": "button-custom",
+      "icon-size": 16
+    },
+    "homogeneous": true,
+    "sigrt": 64,
+    "use-sigrt": false,
+    "sway-mode": {
+      "show-default": false,
+      "show-icon": false,
+      "css-name": "",
+      "icon-size": 16,
+      "angle": 0.0
+    },
+    "hyprland-taskbar": {},
+    "hyprland-workspaces": {}
   }
 ]

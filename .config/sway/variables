@@ -1,4 +1,6 @@
-set $lang us
-set $term foot
-set $exit nwg-bar -s preset-0.css
+set $term alacritty
+set $browser MOZ_ENABLE_WAYLAND=1 firefox-bin
+set $filemanager pcmanfm
+set $editor emacs
 set $launcher nwg-drawer
+set $exit nwg-bar -p center -a middle -i 48 -s preset-0.css
