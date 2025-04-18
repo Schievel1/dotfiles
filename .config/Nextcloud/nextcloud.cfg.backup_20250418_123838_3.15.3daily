@@ -1,5 +1,5 @@
 [General]
-clientVersion=3.16.3daily
+clientVersion=3.15.3daily
 confirmExternalStorage=false
 desktopEnterpriseChannel=daily
 isVfsEnabled=false
@@ -22,7 +22,6 @@ useNewBigFolderSizeLimit=false
 0\authType=webflow
 0\dav_user=pascal
 0\displayName=pascal
-0\encryptionCertificateSha256Fingerprint=@ByteArray()
 0\networkDownloadLimit=0
 0\networkDownloadLimitSetting=-2
 0\networkProxyHostName=
@@ -39,9 +38,9 @@ useNewBigFolderSizeLimit=false
 0\serverVersion=22.1.0.1
 0\url=https://pascal.leimstift.de
 0\user=@Invalid()
-0\version=13
+0\version=1
 0\webflow_user=pascal
-version=13
+version=2
 
 [Settings]
 geometry=@ByteArray(\x1\xd9\xd0\xcb\0\x3\0\0\0\0\a\x80\0\0\x3H\0\0\v!\0\0\a5\0\0\a\x80\0\0\x3H\0\0\t\xc9\0\0\x5y\0\0\0\x2\x2\0\0\0\a\x80\0\0\a\x80\0\0\x3H\0\0\v!\0\0\a5)

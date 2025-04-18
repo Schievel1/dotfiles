@@ -4,8 +4,8 @@ Config { font            = "Ubuntu regular 9"
        , additionalFonts = [ "Mononoki 11"
                            , "Font Awesome 6 Free Solid 12"
                            , "Font Awesome 6 Brands 12"
-                           , "JetBrainsMono Nerd Font 17"
-                           , "JetBrainsMono Nerd Font 15"
+                           , "JetBrainsMono Nerd Font Mono 17"
+                           , "JetBrainsMono Nerd Font Mono 22"
                            ]
        , bgColor      = "#16181c"
        , fgColor      = "#ff6c6b"
@@ -33,9 +33,9 @@ Config { font            = "Ubuntu regular 9"
                         -- Get kernel version (script found in .local/bin)
                     , Run Com ".local/bin/kernel" [] "kernel" 36000
                         -- Cpu usage in percent
-                    , Run Cpu ["-t", "<fn=2>\xf2db</fn>  cpu: <total>%","-H","80","--high","red"] 20
+                    , Run Cpu ["-t", "<fn=2>\xf2db</fn>  cpu: <total>%","-H","80","--high","#ff0000,#282c34:0"] 20
                         -- Ram used number and percent
-                    , Run Memory ["-t", "<fn=2>\xf233</fn>  mem: <used>M/<total>M (<usedratio>%)"] 20 
+                    , Run Memory ["-t", "<fn=2>\xf233</fn>  mem: <used>M/<total>M (<usedratio>%)"] 20
                         -- Swap used number and percent
                     , Run Swap ["-t", "<fn=2>\xf0a0</fn> swap: <used>M/<total>M (<usedratio>%)"] 10
                         -- Disk space free
@@ -47,12 +47,13 @@ Config { font            = "Ubuntu regular 9"
                         -- Time and date
                     , Run Date "<fn=2>\xf017</fn>  %b %d %Y - (%H:%M) " "date" 50
                         -- Script that dynamically adjusts xmobar padding depending on number of trayer icons.
-                    , Run Com ".config/xmobar/trayer-padding-icon.sh" [] "trayerpad" 20
+                    , Run Com "~/.config/xmobar/trayer-padding-icon.sh" [] "trayerpad" 20
                         -- Prints the average Temp of all cpu cores
-                    , Run MultiCoreTemp ["-t", " <avg>°C", "-L", "50", "-H", "70", "-n", "yellow", "-h", "red"] 50
+                    , Run MultiCoreTemp ["-t", "<avg>°C", "-L", "50", "-H", "70", "-n", "#ffff00,#282c34:0", "-h", "#ff0000,#282c34:0"] 50
                         -- Prints out the left side items such as workspaces, layout, etc.
-                    , Run UnsafeStdinReader
+                    , Run UnsafeXPropertyLog "_XMONAD_LOG_2"
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%wrapstart%<fc=#ad8ee6,#282c34:0>%gentoo%</fc>%wrapend%  %wrapstart%%UnsafeStdinReader%%wrapend% }{%wrapstart%<box type=Bottom width=2 mb=2 color=#ededed><fc=#ededed,#282c34:0><action=`gnome-calendar`>%date%</action></fc></box>%wrapend%"
+       , template = "<action=`rofi -show drun`>%wrapstart%<fc=#ad8ee6,#282c34:0> %gentoo%</fc>%wrapend%</action> %wrapstart%%_XMONAD_LOG_2%%wrapend% }{%wrapstart%<box type=Bottom width=2 mb=2 color=#ededed><fc=#ededed,#282c34:0><action=`gnome-calendar`>%date%</action></fc></box>%wrapend%"
+       }
